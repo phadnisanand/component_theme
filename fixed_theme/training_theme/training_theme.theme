@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the training_theme theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function training_theme_preprocess_html(array &$variables) {
+
+}
+
+/**
+ * Implements hook_preprocess_page() for page.html.twig.
+ */
+function training_theme_preprocess_page(array &$variables) {
+
+}
+
+/**
+ * Implements hook_preprocess_form().
+ */
+function training_theme_preprocess_form(array &$variables) {
+
+}
+
+/**
+ * Implements hook_theme_suggestions_user_alter().
+ *
+ *   An array of alternate, more specific names for template files or theme
+ *   functions for users.
+ */
+function training_theme_theme_suggestions_user_alter(&$suggestions, $vars, $hook) {
+  // Define the view mode.
+  $mode = $vars['elements']['#view_mode'];
+  // Create a theme hook suggestion which has the view mode name in it.
+  $suggestions[] = 'user__' . $mode;
+}
