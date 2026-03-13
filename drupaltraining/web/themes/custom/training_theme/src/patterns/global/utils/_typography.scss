@@ -1,0 +1,55 @@
+$font-sans: 'Open Sans', sans-serif;
+$font-serif: 'Georgia', serif;
+
+@mixin font-stack-primary {
+  font-family: $font-sans;
+}
+
+@mixin font-stack-secondary {
+  font-family: $font-serif;
+}
+
+// Font-Weights.
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-italic: italic;
+
+// Heading mixins.
+@mixin heading-1-style {
+  @include font-stack-secondary;
+  font-size: 1.5rem;
+  // 28px.
+  line-height: 1.16;
+
+  @include breakpoint($bp-sm) {
+    font-size: 3rem;
+    // 56px.
+    line-height: 1.16;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem;
+}
+
+h1 {
+  @include heading1;
+}
+
+h2 {
+  @include heading2;
+}
+
+h3 {
+  @include heading3;
+}
+
+h4 {
+  @include heading4;
+}

@@ -1,0 +1,22 @@
+uuid: e69520d5-08ad-4ecf-a903-12b39db495c7
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - training_theme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: training_theme_breadcrumbs
+theme: training_theme
+region: header
+weight: -1
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

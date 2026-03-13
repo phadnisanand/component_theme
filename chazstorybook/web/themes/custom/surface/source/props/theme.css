@@ -1,0 +1,6 @@
+:where([data-theme="surface"]) {
+  --font-body: helvetica, sans-serif;
+  --font-heading: helvetica, sans-serif;
+  --blockquote-border-color: var(--ucla-blue);
+  --blockquote-color: var(--ucla-blue);
+}

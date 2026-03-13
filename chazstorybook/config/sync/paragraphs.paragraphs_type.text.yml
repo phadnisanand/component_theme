@@ -1,0 +1,10 @@
+uuid: 066fde97-9de1-4834-988f-87c805d1f6f9
+langcode: en
+status: true
+dependencies: {  }
+id: text
+label: Text
+icon_uuid: null
+icon_default: null
+description: 'The text component allows users to add content via a WYSIWYG.'
+behavior_plugins: {  }

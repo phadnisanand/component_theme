@@ -1,0 +1,10 @@
+uuid: 96e73867-252a-4add-894f-c21f4d16c822
+langcode: en
+status: true
+dependencies: {  }
+id: section
+label: Section
+icon_uuid: null
+icon_default: null
+description: 'The section component allows users to choose various layouts for other components to be placed within.'
+behavior_plugins: {  }

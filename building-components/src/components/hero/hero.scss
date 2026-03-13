@@ -1,0 +1,21 @@
+// Hero
+//
+// This is the hero component.
+//
+// Markup: hero.twig
+//
+// Style guide: Components.Hero
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.hero__image {
+  @include overlay(0.8);
+  @include image-crop($hero-height-tall-sm);
+  line-height: 0.8;
+  overflow: hidden;
+
+  @include breakpoint($bp-md) {
+    @include image-crop($hero-height-tall-md);
+  }
+}

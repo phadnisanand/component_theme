@@ -1,0 +1,18 @@
+uuid: 10214656-47e9-4c57-ab6b-c2682f119766
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Page
+type: page
+description: 'A standard page to display flexible content.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

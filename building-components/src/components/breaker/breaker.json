@@ -1,0 +1,27 @@
+{
+  "image": "<img src='../assets/hero.png' alt='Alt text'>",
+  "eyebrow": "Drupal Development",
+  "heading": "Content Creation Workflow",
+  "body": "Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.",
+  "items": [
+    {
+      "icon": "responsive",
+      "heading": "Truly Responsive Content",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+      "heading_level": ""
+    },
+    {
+      "icon": "layout",
+      "heading": "Flexible Page Layouts",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+      "heading_level": ""
+    },
+    {
+      "icon": "preview",
+      "heading": "Improved Previews",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+      "heading_level": ""
+    }
+  ],
+  "class": ""
+}

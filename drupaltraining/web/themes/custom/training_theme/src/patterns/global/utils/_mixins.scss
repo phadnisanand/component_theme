@@ -1,0 +1,132 @@
+// Mixins.
+
+// Headings mixins
+@mixin heading1 {
+  font-size: 3rem;
+
+  @include breakpoint($bp-md) {
+    font-size: 3.6rem;
+  }
+}
+
+@mixin heading2 {
+  font-size: 2.4rem;
+
+  @include breakpoint($bp-md) {
+    font-size: 3rem;
+  }
+}
+
+@mixin heading3 {
+  font-size: 2.1rem;
+
+  @include breakpoint($bp-md) {
+    font-size: 2.4rem;
+  }
+}
+
+@mixin heading4 {
+  font-size: 1.6rem;
+
+  @include breakpoint($bp-md) {
+    font-size: 2rem;
+  }
+}
+
+// Clearfix
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// Makes an element visually hidden, but accessible.
+// @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin element-invisible {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+  position: static;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+// Makes an element visually hidden by default, but visible when focused.
+@mixin element-focusable {
+  @include element-invisible;
+
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+// Helper function for working with Sass maps.
+// Example: @include print($configuration);
+@mixin print($declarations) {
+  @each $property, $value in $declarations {
+    #{$property}: $value;
+  }
+}
+
+// Crop image in the middle and
+// set a fixed height.
+@mixin image-crop($height: 100%) {
+  height: $height;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  img {
+    height: 100%;
+    left: 50%;
+    max-width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+  }
+}
+
+// vertical align mixin
+@mixin vertical-align($position: relative) {
+  display: block;
+  position: $position;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// horizontal align mixin
+@mixin horizontal-align($position: relative) {
+  display: inline-block;
+  left: 50%;
+  position: $position;
+  transform: translateX(-50%);
+}
+
+// center align mixin
+@mixin center-align($position: relative) {
+  display: block;
+  left: 50%;
+  position: $position;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Mixin for adding consistent spacing on components.
+@mixin component-spacing($margin: 100px) {
+    margin: 0 auto $margin;
+  max-width: $bp-max;
+}
